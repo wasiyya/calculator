@@ -1,0 +1,1750 @@
+MODULE_TESTS_3.129
+
+
+
+
+=====================================================================
+Instructions: Verifying Inheritance Test Cases Against the Rule-Engine Document
+What You Are Doing
+You are checking whether a set of test cases produce outcomes that match what the operative rules of the document specify. The test cases are verified against the rules, not against the conformance modules. The modules are quality-control artefacts for the document itself and must not be consulted to resolve any test.
+
+
+
+
+Step 1 — Load the Document
+Provide the rule-engine document (DOC00). Confirm it is accessible before proceeding.
+
+
+
+
+Step 2 — Understand the Test Format
+Each test has three components:
+
+
+
+
+A label (e.g. FURUD-PARENTS-DESC-SON-ASABAH)
+A heir composition (e.g. Wife + Son + Mother + Father)
+A claimed outcome (e.g. 3/24; 13/24; 4/24; 4/24)
+
+
+
+
+Step 3 — Identify the Operative Rules
+
+
+
+
+The relevant sections are:
+
+
+
+
+Part 0 to VIII
+Appendices A–G — System-wide constraints, precedence rules, and interpretive discipline, as needed
+Do not consult Appendix H. It contains the conformance modules — test scenarios, module IDs, input compositions, and recorded outcomes — which are quality-control artefacts for the document and carry no rule authority. In the tests, "Section" refers to DOC00; any reference to DOC01 is named as "DOC01 Clause" or "Schedule A (SA…)".
+
+
+
+
+Step 4 - Await list of tests from user, once you finish reading these instructions, prompt the user to paste them
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Step 5 — Derive the Correct Outcome
+Express each heir's share as a fraction of the estate. Normalise to a common denominator where needed.
+
+
+
+
+Step 6 — Compare
+Match each heir in the test to their derived share. If all shares match exactly, record PASS. If any share differs, record FAIL and state what the correct outcome is and which rule produces it.
+
+
+
+
+Step 7 — Scope Limitation
+Do not consult or apply anything from Appendix H. If a test outcome appears to depend on Appendix H, flag it as outside scope rather than attempting to verify it.
+
+
+
+
+Step 8 — Report Results
+For each section, record the number of passing tests and note any anomalies. At the end, provide a total pass count across all sections.
+
+
+
+
+*************************************************
+
+
+
+
+Below are the tests (categorised under each section):
+------------------------------------------------------------------------------------
+
+
+
+
+________________
+
+
+
+
+Section 01 — Core Furūḍ Baselines and Canonical Residuary Behaviour
+==================================================================
+
+
+
+
+Test FURUD-PARENTS-DESC-SON-ASABAH (Majority) - Verified
+Heirs: Wife + Son + Mother + Father
+Outcome: 3/24; 13/24; 4/24; 4/24; 
+
+
+
+
+Test KALALAH-UTERINE-SIBLINGS (Majority) - Verified
+Heirs: Husband + Mother + Maternal Brother + Maternal Sister
+Outcome: 3/6; 1/6; 1/6; 1/6 
+
+
+
+
+Test FURUD-GRANDFATHER-DAUGHTERS-NO-SON (Majority) - Verified
+Heirs: Mother + Paternal Grandfather + Daughter 1 + Daughter 2
+Outcome: 1/6; 1/6; 2/6; 2/6
+
+
+
+
+Test ASABAH-GRANDFATHER-SOLE (Majority) - Verified
+Heirs: Paternal Grandfather only
+Outcome: 1/1
+
+
+
+
+
+
+
+
+Test ASABAH-FULL-SIBLINGS-MIXED (Majority) - Verified
+Heirs: Full Brother + Full Sister
+Outcome: 2/3; 1/3
+
+
+
+
+Test ASABAH-PATERNAL-SIBLINGS-MIXED (Majority) - Verified
+Heirs: Paternal Brother 1 + Paternal Brother 2 + Paternal Sister
+Outcome: 2/5; 2/5; 1/5;
+
+
+
+
+Test FURUD-SPOUSE-FULL-SISTER-SOLE (Majority) - Verified
+Heirs: Husband + Full Sister
+Outcome: 1/2; 1/2;
+
+
+
+
+
+
+
+
+
+
+
+
+Test SIBLING-PATERNAL-SISTER-COMPLETION (Majority) - Verified
+Heirs: Full Sister + Paternal Sister
+Outcome: 3/4; 1/4;
+
+
+
+
+Test SIBLING-PATERNAL-SISTER-COMPLETION-A (Majority) - Verified
+Heirs: Full Sister + Paternal Sister 1 + Paternal Sister 2
+Outcome: 6/8; 1/8; 1/8;
+
+
+
+
+Test SIBLING-PATERNAL-SISTER-COMPLETION-B (Majority) - Verified
+Heirs: Husband + Full Sister + Paternal Sister
+Outcome: 3/7; 3/7; 1/7;
+
+
+
+
+Test SIBLING-PATERNAL-SISTER-COMPLETION-C (Majority) - Verified
+Heirs: Full Sister + Paternal Sister + Paternal Brother
+Outcome: 3/6; 1/6; 2/6;
+
+
+
+
+Test SIBLING-PATERNAL-SISTER-COMPLETION-D (Majority) - Verified
+Heirs: Full Sister 1 + Full Sister 2 + Paternal Sister
+Outcome: 1/2; 1/2; 0;
+
+
+
+
+Test SIBLING-PATERNAL-SISTER-COMPLETION-E (Majority) - Verified
+Heirs: Full Sister + Paternal Brother
+Outcome: 1/2; 1/2;
+
+
+
+
+Test SIBLING-PATERNAL-SISTER-COMPLETION-F (Majority) - Verified
+Heirs: Full Sister 1 + Full Sister 2 + Paternal Brother
+Outcome: 1/3; 1/3; 1/3;
+
+
+
+
+Test SIBLING-PATERNAL-SISTER-COMPLETION-G (Majority) - Verified
+Heirs: Full Sister (did not profess the Islamic faith at the date of death) + Paternal Sister
+Outcome: 0; 1/1;
+
+
+
+
+Test SIBLING-NON-ASSERTING-FULL-BROTHER-BLOCKS-PATERNAL (Majority) - Verified
+(Compliance: classical — a known heir's share vests at death and is not lost by failure to assert; manifest S5(g).D1.)
+Heirs: Full Brother (documented to the SA-PRE(j).1(iv) standard; does not assert a claim) + Paternal Brother
+Outcome: 1/1 (held); 0
+Note: The full brother is not excluded by failure to assert. He blocks the paternal brother, and his share is held under DOC01 Clause 12.5.
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+
+
+Section 02 — Furūḍ-to-ʿAṣabah Transitions and ʿAṣabah Fundamentals
+==================================================================
+
+
+
+
+Test FURUD-FATHER-DAUGHTER-RESIDUE (Majority) - Verified
+Heirs: Mother + Daughter + Father
+Outcome: 1/6; 3/6; 2/6;
+
+
+
+
+Test FATHER-SONS-DAUGHTER-UNCLE-RESIDUE (Majority) - Verified
+Heirs: Son's Daughter + Father + Full Paternal Uncle
+Outcome: 1/2; 1/2; 0;
+
+
+
+
+Test DESCENDANT-MIXED-DIRECT-REMOTE-BLOCKING (Majority) - Verified
+Heirs: Son + Daughter + Son’s Daughter + Son’s Son’s Daughter
+Outcome: 2/3; 1/3; 0; 0;
+
+
+
+
+Test DESCENDANT-DAUGHTER-REMOTER-MALE-NO-BLOCKING (Majority) - Verified 
+Heirs: Daughter + Son's Son 
+Outcome: 1/2; 1/2;
+
+
+
+
+Test DESCENDANT-GRANDSONS-MULTI-BRANCH (Majority) - Verified via DOC00
+Heirs: Son's Daughter + Son's Son 1 (child of Son A) + Son's Son 2 (child of Son B)
+Outcome: 1/5; 2/5; 2/5;
+
+
+
+
+Test DESCENDANT-CHAIN-FEMALE-MALE-PRIORITY (Majority) - Verified 
+Heirs: Son’s Daughter + Son’s Son’s Daughter + Son’s Son’s Son
+Outcome: 3/6; 1/6; 2/6;
+
+
+
+
+Test DESCENDANT-CHAIN-FEMALE-MALE-MULTI-FEMALE (Majority) - Verified
+Heirs: Son's Daughter + Son's Son's Daughter 1 + Son's Son's Daughter 2 + Son's Son's Son 
+Outcome: 4/8; 1/8; 1/8; 2/8;
+
+
+
+
+Test UMARIYYAH-SIBLING-THRESHOLD-OVERRIDE (Majority) - Verified
+Heirs: Husband + Mother + Father + Sibling 1 (any type) + Sibling 2 (any type)
+Outcome: 3/6; 1/6; 2/6; 0; 0;
+
+
+
+
+Test ASABAH-CLASS-ORDER-DESCENDANT-EXCLUDES-UNCLE (Majority) - Verified
+Heirs: Son's Son's Son + Full Paternal Uncle
+Outcome: 1/1; 0;
+Note: Both heirs are three generations from the deceased. The descendant class ranks before the paternal uncle class, so the son's son's son takes the whole residue and the uncle takes nothing (Section 3.8(c); Appendix C4.3).
+
+
+Test ASABAH-CLASS-ORDER-SISTER-WITH-DAUGHTER-EXCLUDES-UNCLE (Majority) - Verified
+Heirs: Daughter + Full Sister + Full Paternal Uncle
+Outcome: 1/2; 1/2; 0;
+Note: The daughter takes one half. The full sister takes the residue as a residuary heir with the daughter (Appendix C8). The sibling class ranks before the paternal uncle class, so the uncle takes nothing (Section 3.8(c); Appendix C4.3).
+
+
+________________
+
+
+
+
+Section 03 — Spouse–Mother + Sibling Composition Modules
+==================================================================
+Test DESCENDANT-FEMALE-COMPLETION-BLOCKS-REMOTER (Majority, wasiyyah for offspring of predeceased son) - Verified
+Heirs: Daughter 1 + Daughter 2 + Son's Daughter 1 + Son's Daughter 2
+Outcome: 1/2; 1/2; 0; 0
+
+
+
+
+Test DESCENDANT-FEMALE-RESCUED-BY-LOWER-MALE (Majority) - Verified 
+Heirs: Daughter 1 + Daughter 2 + Son's Daughter + Son's Son's Son 
+Outcome: 3/9; 3/9; 1/9; 2/9;
+
+
+
+
+Test DESCENDANT-TAKMILAH-CHAIN-BLOCKING (Majority, wasiyyah for offspring of predeceased son)  - Verified
+Heirs: Daughter + Son’s Daughter + Son’s Son’s Daughter
+Outcome: 3/4; 1/4; 0;
+
+
+
+
+Test DESCENDANT-FEMALE-DEEP-CHAIN-NO-DEPTH-LIMIT (Declared election — not scholar-verified)  - Verified via DOC00
+Heirs: Son's Son's Son's Daughter + Son's Son's Son's Son's Daughter + Son's Son's Son's Son's Son's Daughter 
+Outcome: 3/4; 1/4; 0;
+
+
+
+
+Test DESCENDANT-TAKMILAH-SKIPPED-GENERATION (Majority)  - Verified
+Heirs: Daughter + Son's Son's Daughter 1 + Son's Son's Daughter 2
+Outcome: 3/4; 1/8; 1/8;
+
+
+
+
+Test DESCENDANT-FEMALE-DEEP-SOLE-WITH-MOTHER (Declared election — not scholar-verified) - Verified via DOC00 
+Heirs: Mother + Son's Son's Son's Daughter 
+Outcome: 1/4; 3/4;
+
+
+
+
+Test MATERNAL-SIBLING-BLOCKED-BY-DESCENDANT (Majority) - Verified
+Heirs: One Daughter + One Maternal Sibling
+Outcome: 1/1; 0;
+
+
+
+
+Test MATERNAL-SIBLING-BLOCKED-BY-GRANDFATHER (Majority) - Verified
+Heirs: Paternal Grandfather + Maternal Brother
+Outcome: 1/1; 0;
+
+
+
+
+Test SPOUSE-MOTHER-FULL_SISTER_SINGLE-AWL (Majority) - Verified
+Heirs: Husband + Mother + Full Sister
+Outcome: 3/8; 2/8; 3/8 
+
+
+
+
+Test SPOUSE-MOTHER-PATERNAL_BROTHER_SINGLE-NO-REDUCTION (Majority) - Verified
+Heirs: Husband + Mother + Paternal Brother
+Outcome: 3/6; 2/6; 1/6 
+
+
+
+
+Test SPOUSE-MOTHER-PATERNAL_SISTER_SINGLE-AWL (Majority) - Verified
+Heirs: Husband + Mother + Paternal Sister
+Outcome: 3/8; 2/8; 3/8 
+
+
+
+
+Test SPOUSE-MOTHER-MATERNAL_SIBLING_SINGLE-NO-REDUCTION (Majority) - Verified
+Heirs: Husband + Mother + Maternal Sibling
+Outcome: 3/6; 2/6; 1/6 
+
+
+
+
+Test SPOUSE-MOTHER-SIBLINGS_PLURAL-COMPOSITION-MATERNAL_ONLY (Majority) - Verified
+Heirs: Husband + Mother + Maternal Brother + Maternal Sister
+Outcome: 1/2; 1/6; 1/6; 1/6 
+
+
+
+
+Test SPOUSE-MOTHER-SIBLINGS_PLURAL-COMPOSITION-AGNATIC_ONLY (Majority) - Verified
+Heirs: Husband + Mother + Full Brother + Full Sister
+Outcome: 9/18; 3/18; 4/18; 2/18 
+
+
+
+
+Test SPOUSE-MOTHER-SIBLINGS_PLURAL-COMPOSITION-MIXED_NON_EXHAUSTIVE (Majority) - Verified
+Heirs: Husband + Mother + Maternal Sibling + Full Brother + Full Sister
+Outcome: 9/18; 3/18; 3/18; 2/18; 1/18
+
+
+
+
+Test SPOUSE-MOTHER-SIBLINGS_PLURAL-COMPOSITION-MIXED_EXHAUSTIVE_FIXED_SHARES (Maliki and Shafii compliant. Hanafi and Hanbali dissent noted; not adopted) - Verified
+Heirs: Husband + Mother + Maternal Brother + Maternal Sister + Full Brother + Full Sister
+Outcome: 18/36; 6/36; 3/36; 3/36; 3/36; 3/36;
+
+
+
+
+Test HUSBAND-MOTHER-MATERNAL_PLURAL-FULL-SISTER-AWL (Majority) - Verified
+(Compliance: classical consensus — sibling pooling requires a full brother; a full sister without a full brother takes her fixed share of 1/2 and the case is resolved by awl from 6 to 9; Section 5.2.7 Step 4; manifest S5(h).D1.)
+Heirs: Husband + Mother + Maternal Brother 1 + Maternal Brother 2 + Full Sister
+Outcome: 3/9; 1/9; 1/9; 1/9; 3/9;
+
+
+
+
+
+
+
+
+Test HUSBAND-GRANDMOTHER-MATERNAL_PLURAL-FULL-BROTHER-POOLED (Declared election — Maliki and Shafii; Hanafi and Hanbali dissent noted) - Verified
+(Compliance: a grandmother taking the 1/6 stands in the place of the mother; the maternal brothers and the full brother share the 1/3 pool equally per capita; Section 5.4.2; manifest S5(h).D2 and D4.)
+Heirs: Husband + Paternal Grandmother + Maternal Brother 1 + Maternal Brother 2 + Full Brother
+Outcome: 9/18; 3/18; 2/18; 2/18; 2/18;
+
+
+
+
+Test HUSBAND-MOTHER-MATERNAL_PLURAL-PATERNAL-BROTHER-EXCLUDED (Majority) - Verified
+(Compliance: classical consensus — a paternal brother does not share in the sibling pool; as residuary heir he takes nothing, the fixed shares exhausting the estate; Section 5.2.7 Step 3; manifest S5(h).D3.)
+Heirs: Husband + Mother + Maternal Brother 1 + Maternal Brother 2 + Paternal Brother
+Outcome: 3/6; 1/6; 1/6; 1/6; 0;
+
+
+
+
+Test HUSBAND-MOTHER-MATERNAL_PLURAL-FULL-SISTER-PATERNAL-BROTHER-AWL (Majority) - Verified
+(Compliance: the paternal brother qualifies as residuary heir under Section 5.2.7 Step 3, but the fixed shares exceed unity, so no residue arises, he takes nothing and awl applies; Section 5.2.7 Classification and effects (b); manifest P145.D1.)
+Heirs: Husband + Mother + Maternal Brother 1 + Maternal Brother 2 + Full Sister + Paternal Brother
+Outcome: 3/9; 1/9; 1/9; 1/9; 3/9; 0;
+
+
+
+
+Test SPOUSE-MOTHER-SIBLINGS_PLURAL-COMPOSITION-MIXED_NON_EXHAUSTIVE_POINTER (Majority) - Verified
+Heirs: Husband + Mother + Maternal Sibling + Paternal Brother + Paternal Sister
+Outcome: 9/18; 3/18; 3/18; 2/18; 1/18
+
+
+
+
+Test SISTER-ASABAH-SPOUSE-PRESENT-DAUGHTER (Majority) - Verified
+Heirs: Wife + Daughter + full sister
+Outcome: 1/8; 4/8; 3/8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+
+
+Section 04 — ʿAwl Cases (must close the estate)
+==================================================================
+
+
+
+
+Test AWL-FOUR-FURUD-WITH-DESC (Majority) - Verified
+Heirs: Husband + Daughter + Father + Mother
+Outcome: 3/13; 6/13; 2/13; 2/13
+
+
+
+
+Test AWL-SPOUSE-MOTHER-DAUGHTERS (Majority) - Verified
+Heirs: Husband + Daughter 1 + Daughter 2 + Mother
+Outcome: 3/13; 4/13; 4/13; 2/13; 
+
+
+
+
+Test AWL-GRANDFATHER-DESC-DAUGHTERS (Majority) - Verified
+Heirs: Husband + Daughter 1 + Daughter 2 + Mother + Paternal Grandfather
+Outcome: 3/15; 4/15; 4/15; 2/15; 2/15
+
+
+
+
+Test AWL-SPOUSE-FULL-SISTERS (Majority) - Verified
+Heirs: Husband + Full Sister 1 + Full Sister 2
+Outcome: 3/7; 2/7; 2/7
+
+
+
+
+Test AWL-PARENTS-SPOUSE-DAUGHTERS-HUSBAND (Majority) - Verified
+Heirs: Father + Mother + Husband + Daughter 1 + Daughter 2
+Outcome: 2/15; 2/15; 3/15; 4/15; 4/15; 
+
+
+
+
+Test AWL-PARENTS-SPOUSE-DAUGHTERS-WIFE (Majority) - Verified
+Heirs: Father + Mother + Wife + Daughter 1 + Daughter 2
+Outcome: 4/27; 4/27; 3/27; 8/27; 8/27
+
+
+
+
+Test AWL-SPOUSE-MOTHER-FULL-SISTER-MUBAHALA (Majority) - Verified
+(Compliance: majority — no agnatic sibling qualifies as residuary heir; the sister keeps her fixed share of one half and the shares are reduced by awl from 6 to 8; Ibn Abbas dissent on awl noted; manifest N.260 and S5(g).D9.)
+Heirs: Husband + Mother + Full Sister
+Outcome: 3/8; 2/8; 3/8
+
+
+
+
+Test AWL-DAUGHTERS-SIBLING-RESIDUARY-NO-RESIDUE (Majority) - Verified
+(Compliance: classical — the full brother is admitted as residuary heir alongside the daughters, but the fixed shares exceed the estate and awl leaves no residue; manifest N.260.)
+Heirs: Husband + Daughter 1 + Daughter 2 + Mother + Full Brother
+Outcome: 3/13; 4/13; 4/13; 2/13; 0
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+
+
+Section 05 — Radd Cases (no ʿaṣabah exists)
+==================================================================
+
+
+
+
+Test RADD-MULTI-CLASS-SPOUSE-EXCLUDED (Majority) - Verified
+Heirs: Wife + Daughter + Mother
+Outcome: 4/32; 21/32; 7/32
+
+
+
+
+Test RADD-SINGLE-CLASS-MATERNAL (Majority) - Verified
+Heirs: One Maternal Sibling Only
+Outcome: 1/1
+
+
+
+
+Test RADD-SINGLE-CLASS-MATERNAL-WITH-MOTHER (Majority) - Verified
+Heirs: Mother + Maternal Sibling 1 + Maternal Sibling 2 + Maternal Sibling 3 
+Outcome: 3/9; 2/9; 2/9; 2/9;
+
+
+
+
+Test SOLE-HEIR-DAUGHTER-COMPLETION (Majority) - Verified
+Heirs: One Daughter Only
+Outcome: 1/1
+
+
+
+
+Test FURUD-SPOUSE-DAUGHTER-RADD-EXCLUDE-SPOUSE (Majority) - Verified
+Heirs: Husband + One Daughter
+Outcome: 1/4; 3/4;
+
+
+
+
+Test RADD-PRECEDES-FALLBACK-DAUGHTER (Majority) - Verified
+Heirs: Daughter + Daughter's Son (son of that daughter)
+Outcome: 1/1; 0
+
+
+
+
+Test RADD-SPOUSE-MOTHER-MATERNAL-SIBLING (Majority) - Verified
+(Compliance: majority — no agnatic sibling survives; the fixed shares fall short of the estate; radd to the mother and the maternal brother in proportion to their shares, the spouse excluded; manifest N.260.)
+Heirs: Wife + Mother + Maternal Brother
+Outcome: 1/4; 1/2; 1/4
+
+
+
+
+Section 06 — Special Classical Conversions
+==================================================================
+
+
+
+
+Test FURUD-SPOUSE-PARENTS-NO-DESC-WIFE (Majority) - Verified
+Heirs: Wife + Mother + Father
+Outcome: 1/4; 1/4; 2/4;
+
+
+
+
+Test UMARIYYAH-SPOUSE-PARENTS-HUSBAND (Majority) - Verified
+Heirs: Husband + Mother + Father
+Outcome: 3/6; 1/6; 2/6
+
+
+
+
+Test UMARIYYAH-SINGLE-SIBLING-HUSBAND (Majority) - Verified
+Heirs: Husband + Mother + Father + Full Brother
+Outcome: 3/6; 1/6; 2/6; 0
+
+
+
+
+Test FURUD-GRANDFATHER-DAUGHTER-SINGLE (Majority) - Verified
+Heirs: One Daughter + Mother + Paternal Grandfather
+Outcome: 3/6; 1/6; 2/6;
+
+
+
+
+Test SISTER-ASABAH-MA-AL-GHAYR-SINGLE (Majority) - Verified
+Heirs: One Daughter + One Full Sister
+Outcome: 1/2; 1/2;
+
+
+
+
+Test SISTER-ASABAH-MA-AL-GHAYR-MULTI (Majority) - Verified
+Heirs: Daughter 1 + Daughter 2 + One Full Sister
+Outcome: 1/3; 1/3; 1/3;
+
+
+Test SIBLING-OVERRIDE-DAUGHTER-SONS-DAUGHTER-FULL-BROTHER (Majority) - Verified
+(Compliance: classical consensus — a son's daughter is not a male-line descendant and does not prevent the full brother taking the residue beside female descendants; Section 5.1.6(8); Section 1.2.10; manifest P45.D1.)
+Heirs: Daughter + Son's Daughter + Full Brother
+Outcome: 3/6; 1/6; 2/6;
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-COMPOSITE - Verified
+(Compliance: Maliki, Shafii, Hanbali compliant — paternal sisters counted against the grandfather; full sister takes up to one half; Hanafi dissent on competition noted.)
+Heirs: Wife + Full Sister + Paternal Sister 1 + Paternal Sister 2 + Paternal Grandfather + Paternal Cousin (son of a full paternal uncle)
+Outcome: 5/20; 9/20; 0; 0; 6/20; 0
+
+
+Test GRANDFATHER-DAUGHTER-SUBSTITUTE-MOTHERLESS (Majority) - Verified
+Heirs: Daughter 1 + Paternal Grandfather
+Outcome: 1/2; 1/2
+
+
+
+
+Test GRANDFATHER-DAUGHTER-SPOUSE-RESIDUE (Majority) - Verified
+Heirs: Wife + Daughter 1 + Paternal Grandfather
+Outcome: 3/24; 12/24; 9/24;
+
+
+
+
+Test GRANDFATHER-SPOUSE-NO-DESCENDANT-RESIDUE (Majority) - Verified
+Heirs: Wife + Paternal Grandfather
+Outcome: 1/4; 3/4;
+
+
+
+
+Test GRANDFATHER-DAUGHTER-SONS-DAUGHTER-MOTHER (Majority) - Verified
+(Compliance: classical consensus — the son's daughter takes 1/6 completing two thirds beside a single daughter; the grandfather takes 1/6 and no residue arises; Section 5.2.8.3; manifest S5(e).D1.)
+Heirs: Daughter 1 + Son's Daughter + Mother + Paternal Grandfather
+Outcome: 3/6; 1/6; 1/6; 1/6;
+
+
+
+
+Test GRANDFATHER-DAUGHTER-SONS-DAUGHTER-MOTHERLESS (Majority) - Verified
+(Compliance: classical consensus — the son's daughter takes 1/6 completing two thirds beside a single daughter; the grandfather takes 1/6 fixed plus the 1/6 residue; Section 5.2.8.3; manifest S5(e).D1.)
+Heirs: Daughter 1 + Son's Daughter + Paternal Grandfather
+Outcome: 3/6; 1/6; 2/6;
+
+
+
+
+Test GRANDFATHER-DAUGHTER-GRANDMOTHER-MOTHERLESS (Majority) - Verified
+(Compliance: classical consensus — the paternal grandfather does not block the father's mother; she takes 1/6; the grandfather takes 1/6 fixed plus the 1/6 residue; Section 5.2.8.3; manifest S5(f).D2.)
+Heirs: Daughter 1 + Paternal Grandmother + Paternal Grandfather
+Outcome: 3/6; 1/6; 2/6;
+
+
+
+
+Section 07 — Higher Agnatic Edge Rules
+==================================================================
+
+
+
+
+Test ASABAH-REMOTE-AGNATE-MALE-ONLY (Majority) - Verified
+Heirs: Full Paternal Uncle’s Son + Full Paternal Uncle’s Daughter
+Outcome: 1/1; 0;
+
+
+
+
+Section 08 — Sole Spouse Policy Cases
+==================================================================
+
+
+
+
+Test SOLE-SPOUSE-POLICY-RESIDUE (Declared election — consensus-departing; residue to the spouse, not Bayt al-Mal) - Verified
+Heirs: Only Wife Survives
+Outcome: 1/1
+
+
+
+
+Test SOLE-SPOUSE-POLICY-RESIDUE-HUSBAND (Declared election — consensus-departing; residue to the spouse, not Bayt al-Mal) - Verified
+Heirs: Only Husband Survives 
+Outcome: 1/1
+
+
+
+
+Test SOLE-SPOUSE-MULTIPLE-WIVES (Declared election — consensus-departing; residue to the spouse, not Bayt al-Mal) - Verified
+Heirs: Two Wives Only
+Outcome: 1/2; 1/2;
+
+
+
+
+Test SPOUSE-DHU-AL-ARHAM-REMAINDER (Majority) - Verified via DOC00
+Heirs: Wife + Maternal Aunt (full sister of the mother)
+Outcome: 1/4; 3/4;
+
+
+
+
+Test SPOUSE-DHU-AL-ARHAM-REMAINDER-A (Majority) - Verified
+Heirs: Husband + Daughter's Son (daughter predeceased)
+Outcome: 1/2; 1/2;
+
+
+
+
+Test SPOUSE-DHU-AL-ARHAM-REMAINDER-B (Majority) - Verified
+Heirs: Wife + Daughter's Son (daughter predeceased) + Maternal Aunt (full sister of the mother)
+Outcome: 1/4; 9/16; 3/16;
+Note: The remainder of 3/4 is divided as if the daughter and the mother alone survived (1/2 and 1/6, returned 3 : 1); the wife's share is not reduced (DOC00 Section 8.3.5(b) and (d)).
+
+
+
+
+Test SPOUSE-DHU-AL-ARHAM-REMAINDER-C (Majority) - Verified
+Heirs: Wife 1 + Wife 2 + Maternal Aunt (full sister of the mother) 
+Outcome: 1/8; 1/8; 3/4;
+
+
+
+
+Test SPOUSE-DHU-AL-ARHAM-REMAINDER-D (Declared election — consensus-departing; residue to the spouse, not Bayt al-Mal) - Verified via DOC00
+Heirs: Wife + Maternal Aunt (full sister of the mother; excluded under Section 1.2.5; did not profess the Islamic faith at the date of death) 
+Outcome: 1/1; 0;
+Note: No dhawu al-arham claimant is eligible, so the second paragraph of Section 3.11 does not apply; S-Policy-01 gives the wife the whole estate.
+
+
+
+
+Test SPOUSE-DHU-AL-ARHAM-REMAINDER-E (Majority) - Verified
+Heirs: Wife + Maternal Aunt + Maternal Uncle (full sister and full brother of the mother)
+Outcome: 1/4; 1/4; 1/2;
+Note: The mother is treated as the deceased and her share of 3/4 passes to her brother and sister, the male taking twice the female (DOC00 Section 8.3.6(a)). Were they the mother's maternal half-siblings, each would take 3/8.
+
+
+
+
+________________
+
+
+
+
+Section 09 — Grandfather–Sibling Competition (Selection Logic)
+==================================================================
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-FULL_BROTHER (Majority) - Verified
+Heirs: Paternal Grandfather + Full Brother
+Outcome: 1/2; 1/2
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-FULL_SISTER (Majority) - Verified
+Heirs: Paternal Grandfather + Full Sister
+Outcome: 2/3; 1/3
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-MIXED (Majority) - Verified
+Heirs: Paternal Grandfather + Full Brother + Full Sister
+Outcome: 2/5; 2/5; 1/5
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-NON-ASSERTING (Majority) - Verified
+(Compliance: classical — the non-asserting heir is counted and takes; manifest S5(g).D1.)
+Heirs: Paternal Grandfather + Full Brother A + Full Brother B (documented to the SA-PRE(j).1(iv) standard; does not assert a claim)
+Outcome: 1/3; 1/3; 1/3 (held)
+Note: Brother B is counted in the unit count and allocated his share, which is held under DOC01 Clause 12.5.
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-MATERNAL-NOT-COUNTED (Majority) - Verified
+(Compliance: classical — a maternal sibling is excluded by the grandfather and is not counted against him; manifest S5(g).D2.)
+Heirs: Paternal Grandfather + Full Brother + Maternal Brother
+Outcome: 1/2; 1/2; 0
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-DAUGHTER (Majority) - Verified
+(Compliance: majority — female descendants do not exclude full or paternal siblings; the grandfather takes the best of 1/6, 1/3 of the remainder or muqasama; Hanafi dissent noted; manifest S5(g).D3.)
+Heirs: Daughter + Paternal Grandfather + Full Brother
+Outcome: 1/2; 1/4; 1/4
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-TWO-DAUGHTERS (Majority) - Verified
+Heirs: Daughter 1 + Daughter 2 + Paternal Grandfather + Full Brother
+Outcome: 1/3; 1/3; 1/6; 1/6
+Note: The daughters take 2/3 collectively. The grandfather's options tie at 1/6 (one sixth; muqasama 1/3 × 1/2). Option 3 (muqasama) is selected, being declared last in Section 7.2.2 (G-Policy-01 selection rule); the outcome is the same under either option.
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-TWO-DAUGHTERS-HUSBAND-AWL (Majority) - Verified
+Heirs: Daughter 1 + Daughter 2 + Husband + Paternal Grandfather + Full Brother
+Outcome: 4/13; 4/13; 3/13; 2/13; 0
+Note: The fixed shares 2/3 + 1/4 + 1/6 exceed the estate; awl to 13. The grandfather takes 1/6 as reduced and no sibling receives any share.
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-DAUGHTER-MATERNAL (Majority) - Verified
+Heirs: Daughter + Paternal Grandfather + Full Brother + Maternal Brother
+Outcome: 1/2; 1/4; 1/4; 0
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-TAKE-BACK-ASHRIYYAH (Majority) - Verified
+(Compliance: Maliki, Shafii, Hanbali — paternal siblings counted against the grandfather; the full sister takes up to one half and the paternal brother the balance; Hanafi dissent noted; manifest S5(g).D5.)
+Heirs: Paternal Grandfather + Full Sister + Paternal Brother
+Outcome: 4/10; 5/10; 1/10
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-FULL-BROTHER-PATERNAL-BROTHER (Majority) - Verified
+Heirs: Paternal Grandfather + Full Brother + Paternal Brother
+Outcome: 1/3; 2/3; 0
+Note: The paternal brother is counted (6 units) and takes nothing; the full brother takes the whole sibling portion.
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-DAUGHTER-TAKE-BACK (Majority) - Verified
+Heirs: Daughter + Paternal Grandfather + Full Sister + Paternal Brother
+Outcome: 5/10; 2/10; 3/10; 0
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-THIRD-TAKE-BACK (Majority) - Verified
+Heirs: Paternal Grandfather + Full Sister + Paternal Brother 1 + Paternal Brother 2
+Outcome: 1/3; 1/2; 1/12; 1/12
+Note: Muqasama over 7 units gives 2/7, less than one third, so the grandfather takes 1/3. The full sister takes 1/2 and the balance of 1/6 passes to the paternal brothers.
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-AKDARIYYAH (Majority) - Verified
+(Compliance: Maliki, Shafii, Hanbali — the akdariyyah; Hanafi: husband 1/2, mother 1/3, grandfather 1/6, sister nil; manifest S5(g).D7.)
+Heirs: Husband + Mother + Paternal Grandfather + Full Sister
+Outcome: 9/27; 6/27; 8/27; 4/27
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-AKDARIYYAH-PATERNAL-SISTER (Majority) - Verified
+Heirs: Husband + Mother + Paternal Grandfather + Paternal Sister
+Outcome: 9/27; 6/27; 8/27; 4/27
+
+
+
+
+Test GRANDFATHER-SIBLING-COMPETITION-AKDARIYYAH-CONTROL (Majority) - Verified
+Heirs: Husband + Mother + Paternal Grandfather + Full Sister 1 + Full Sister 2
+Outcome: 1/2; 1/6; 1/6; 1/12; 1/12
+Note: Two sisters reduce the mother to 1/6, a residue of 1/3 remains, and the akdariyyah rule does not apply. The grandfather's options tie at 1/6. Option 3 (muqasama) is selected, being declared last in Section 7.2.2 (G-Policy-01 selection rule); the outcome is the same under either option.
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+
+
+Section 10 - Higher Agnates and Grandmothers (Sections 5.2.9 and 5.5)
+=====================================================================
+Test HIGHER-AGNATE-GREAT-GRANDFATHER-SOLE (Majority) - Verified
+(Compliance: unanimous all four schools — nearest male ascendant in uninterrupted paternal line inherits as Asabah where all nearer ascendants have predeceased.)
+Heirs: Paternal Great-Grandfather
+Outcome: 1/1
+
+
+
+
+Test HIGHER-AGNATE-GREAT-GRANDFATHER-WITH-DAUGHTERS (Majority) - Verified
+(Compliance: unanimous all four schools — great-grandfather steps into grandfather's role per Section 5.5.2; inherits 1/6 fixed plus residue as Asabah in daughters-only configuration.)
+Heirs: Daughter 1 + Daughter 2 + Paternal Great-Grandfather (father absent; paternal grandfather absent)
+Outcome: 2/6; 2/6; 2/6
+Note: Daughters collectively take 4/6 (2/6 each). Great-grandfather takes 1/6 fixed plus 1/6 residue = 2/6. Estate fully exhausted. No radd.
+
+
+
+
+Test HIGHER-AGNATE-GREAT-GRANDFATHER-BLOCKS-MATERNAL-SIBLING (Majority) - Verified
+(Compliance: classical consensus — the paternal grandfather however high excludes maternal siblings per Sections 5.4.1(d) and 5.5.2.)
+Heirs: Paternal Great-Grandfather + Maternal Brother (father absent; paternal grandfather absent)
+Outcome: 1/1; 0
+Note: The great-grandfather stands in the paternal grandfather's place and excludes the maternal brother.
+
+
+
+
+Test HIGHER-AGNATE-GREAT-GRANDFATHER-WITH-FULL-BROTHER (Majority) - Verified
+(Compliance: majority — the paternal grandfather however high competes with full and paternal siblings per G-Policy-01 and Section 5.5.2.)
+Heirs: Paternal Great-Grandfather + Full Brother (father absent; paternal grandfather absent)
+Outcome: 1/2; 1/2
+Note: The great-grandfather stands in the paternal grandfather's place under G-Policy-01 and shares the estate with the full brother by muqasama.
+
+
+
+
+Test HIGHER-AGNATE-GREAT-GRANDFATHER-TAKE-BACK (Majority) - Verified
+(Compliance: majority — the paternal grandfather however high applies the take-back rule per G-Policy-01 and Section 5.5.2; manifest S5(g).06.)
+Heirs: Paternal Great-Grandfather + Full Sister + Paternal Brother (father absent; paternal grandfather absent)
+Outcome: 4/10; 5/10; 1/10
+
+
+
+
+Test HIGHER-AGNATE-GREAT-GRANDFATHER-BLOCKS-BROTHERS-SON (Majority) - Verified
+(Compliance: classical consensus — the paternal grandfather however high excludes brothers' sons per Sections 5.5.2 and 5.5.6.)
+Heirs: Paternal Great-Grandfather + Full Brother's Son (father absent; paternal grandfather absent)
+Outcome: 1/1; 0
+
+
+
+
+Test HIGHER-AGNATE-FULL-UNCLE-EXCLUDES-HALF-UNCLE (Majority) - Verified
+(Compliance: unanimous all four schools — full paternal uncle has priority over half paternal uncle at the same collateral level per Section 5.5.3.)
+Heirs: Full Paternal Uncle + Half Paternal Uncle (paternal half-brother of father)
+Outcome: 1/1; 0
+Note: Full paternal uncle takes entire estate. Half paternal uncle is excluded by the full uncle at the same level.
+
+
+
+
+Test HIGHER-AGNATE-UNCLE-BLOCKS-COUSIN (Majority) - Verified
+(Compliance: unanimous all four schools — paternal uncle's son (first cousin) is blocked by a surviving paternal uncle per Section 5.5.3 nearest generational distance rule.)
+Heirs: Full Paternal Uncle + Full Paternal Uncle's Son
+Outcome: 1/1; 0
+
+
+
+
+Test HIGHER-AGNATE-FULL-COUSIN-EXCLUDES-HALF-COUSIN (Majority) - Verified
+(Compliance: unanimous all four schools — full line priority extends to cousin level; son of full paternal uncle excludes son of paternal half uncle where no uncle survives.)
+Heirs: Son of Full Paternal Uncle + Son of Paternal Half Uncle (no uncle survives)
+Outcome: 1/1; 0
+
+
+
+
+Test GRANDMOTHER-BLOCKED-BY-MOTHER (Majority) - Verified
+(Compliance: unanimous all four schools — surviving mother blocks both grandmothers per Section 5.2.9; mother takes entire estate by radd where no Asabah exists.)
+Heirs: Mother + Paternal Grandmother + Maternal Grandmother (no descendants; no father; no Asabah)
+Outcome: 1/1; 0; 0
+Note: Mother's fixed share is 1/3. No Asabah present. Radd applies to mother as the sole radd-eligible heir. Grandmothers are blocked by the mother and receive nil prior to radd evaluation.
+
+
+
+
+Test GRANDMOTHER-BOTH-PRESENT-RADD (Majority) - Verified
+(Compliance: unanimous all four schools — both grandmothers share a single fixed share of 1/6 equally per Section 5.2.9; radd distributes residue proportionally between them where no Asabah and no spouse exist.)
+Heirs: Paternal Grandmother + Maternal Grandmother (no mother; no father; no descendants; no Asabah; no spouse)
+Outcome: 1/2; 1/2
+Note: The grandmothers share a single fixed share of 1/6, each taking 1/12. Aggregate fixed = 1/6. Residue = 5/6. Radd applies proportionally: each grandmother holds an equal fixed share so radd is split equally, 5/12 each. Final allocation 1/12 + 5/12 = 6/12 = 1/2 each. This outcome is the same whether the one sixth is shared or taken by each grandmother separately; GRANDMOTHERS-SHARED-SIXTH-WITH-SON tests the shared-share rule.
+
+
+
+
+Test GRANDMOTHER-PATERNAL-BLOCKED-BY-FATHER (Majority) - Verified
+(Compliance: majority, a report from Ahmad to the contrary noted — paternal grandmother is blocked by a surviving father per Section 5.2.9; maternal grandmother is not blocked by the father.)
+Heirs: Father + Maternal Grandmother + Paternal Grandmother (no descendants; no spouse)
+Outcome: 5/6; 1/6; 0
+Note: Maternal grandmother takes 1/6. Paternal grandmother is blocked by the father and receives nil. Father takes the residue 5/6 as Asabah.
+
+
+
+
+Test GRANDMOTHERS-SHARED-SIXTH-WITH-SON (Majority) - Verified
+(Compliance: unanimous all four schools — where both grandmothers are eligible they share a single fixed share of 1/6 equally per Section 5.2.9; neither takes a separate 1/6.)
+Heirs: Son + Paternal Grandmother + Maternal Grandmother (no mother; no father; no spouse; no other descendants)
+Outcome: 10/12; 1/12; 1/12
+Note: The grandmothers share a single fixed share of 1/6, each taking 1/12. The son takes the residue 5/6 as Asabah. No awl, no radd. A reading under which each grandmother takes 1/6 separately gives 8/12; 2/12; 2/12 and fails this test.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Test HIGHER-AGNATE-GRANDFATHER-BROTHER-ASABAH (Majority) - Verified
+(Compliance: classical position per Section 5.5.4, stated in the texts of all four schools at this level — the collateral agnatic chain extends beyond the paternal uncle level to the grandfather's brothers and their male-line descendants per Section 5.5.4; no school election arises.)
+Heirs: Full Brother of Paternal Grandfather (no descendants; no ascendants; no siblings; no paternal uncle and no male-line descendant of any paternal uncle survives)
+Outcome: 1/1
+Note: The paternal uncle class is exhausted, so the chain extends to the second collateral level under Section 5.5.4. The full brother of the paternal grandfather has priority over a half brother of the paternal grandfather and is admitted as sole Asabah, taking the whole estate under Section 3.8. P-CHAR-01 is not reached: Section 0.5.3 Step 10 applies only where no allocation has been made following completion of Steps 1 through 9.
+
+
+
+
+Test HIGHER-AGNATE-THIRD-COLLATERAL-LEVEL (Majority) - Verified via DOC00
+(Compliance: classical position per Section 5.5.4, stated at this level in Hanafi, Shafi'i and Hanbali texts, no Maliki text at this level having been located — the collateral agnatic chain extends through successive ancestral collateral levels per Section 5.5.4; no school election arises. At each level the full line has priority over the half line and the nearer generational degree excludes the more remote.)
+Heirs: Full Brother of Paternal Great-Grandfather + Paternal Half-Brother of Paternal Great-Grandfather + Son of the Full Brother of the Paternal Great-Grandfather (no descendants; no ascendants; no siblings; no paternal uncle and no male-line descendant of any paternal uncle survives; no brother of the paternal grandfather and no male-line descendant of any such brother survives)
+Outcome: 1/1; 0; 0
+Note: The paternal uncle class and the grandfather's brother class are both exhausted, so the chain extends to the third ancestral collateral level under Section 5.5.4. Within that level the full brother of the paternal great-grandfather has priority over the half brother, and blocks his own male-line descendants. He is admitted as sole Asabah and takes the whole estate under Section 3.8. P-CHAR-01 is not reached.
+
+
+
+
+Test HIGHER-AGNATE-BROTHERS-SON-EXCLUDES-UNCLE (Majority) - Verified
+(Compliance: classical consensus — the brothers' sons class ranks before the paternal uncle class per Sections 5.5.3 and 5.5.6.)
+Heirs: Full Brother's Son + Full Paternal Uncle
+Outcome: 1/1; 0
+Note: Both heirs are three generations from the deceased. Direction decides before degree: the brother's son takes the whole and the uncle is excluded.
+
+
+
+
+
+
+
+
+Test HIGHER-AGNATE-BROTHERS-SON-WITH-DAUGHTER (Majority) - Verified
+(Compliance: classical consensus — a daughter does not exclude a brother's son; brothers' sons are not siblings per Section 5.5.6.)
+Heirs: Daughter + Full Brother's Son
+Outcome: 1/2; 1/2
+Note: The daughter takes one half. The brother's son takes the residue as a residuary heir. No radd to the daughter.
+
+
+
+
+Test COUSIN-ALSO-MATERNAL-BROTHER-TWO-CAPACITIES (Majority) - Verified via DOC00
+(Compliance: majority — a person who is a fixed-share heir by one relationship and a residuary heir by another inherits by both; the residue is shared equally between the two cousins; Ibn Masud dissent noted; Section 1.2.9; manifest P150.D1.)
+Heirs: Paternal Cousin 1 (son of a full paternal uncle; also Maternal Half-Brother) + Paternal Cousin 2 (son of a full paternal uncle)
+Outcome: 7/12; 5/12;
+
+
+
+
+Test HIGHER-AGNATE-BROTHERS-SON-NEARER-DEGREE-FIRST (Majority) - Verified
+(Compliance: classical consensus — within the brothers' sons class, nearer degree is tested before the full line per Section 5.5.6.)
+Heirs: Paternal Brother's Son + Full Brother's Son's Son
+Outcome: 1/1; 0
+Note: The paternal brother's son is one generation nearer and excludes the full brother's son's son, although the latter descends through the full line.
+
+
+
+
+Test HIGHER-AGNATE-BROTHERS-SON-EXCLUDED-BY-SISTER-WITH-DAUGHTER (Majority) - Verified
+(Compliance: classical consensus — a full sister taking the residue with a daughter excludes brothers' sons per Sections 5.1.6(8) and 5.5.6.)
+Heirs: Daughter + Full Sister + Full Brother's Son
+Outcome: 1/2; 1/2; 0
+Note: The daughter takes one half. The full sister takes the residue as a residuary heir with the daughter. The brother's son is excluded.
+
+
+
+
+
+
+
+
+Test HIGHER-AGNATE-BROTHERS-SON-EXCLUDES-BROTHERS-DAUGHTER (Majority) - Verified
+(Compliance: classical consensus — a brother's daughter is not a residuary heir and does not share with her brother per Sections 5.5.6 and 8.3.7.)
+Heirs: Full Brother's Son + Full Brother's Daughter
+Outcome: 1/1; 0
+Note: The brother's son takes the whole as a residuary heir. His sister is a dhawu al-arham relative and takes nothing while a residuary heir exists (DOC00 Section 8.3).
+
+
+
+
+Test HIGHER-AGNATE-BROTHERS-SON-NOT-COUNTED-FOR-MOTHER (Majority) - Verified
+(Compliance: classical consensus — brothers' sons are not siblings and do not reduce the mother's share per Sections 5.2.4 and 5.5.6.)
+Heirs: Mother + Full Brother's Son + Paternal Brother's Son
+Outcome: 1/3; 2/3; 0
+Note: No sibling survives, so the mother takes one third. The full brother's son takes the residue and excludes the paternal brother's son at the same degree.
+
+
+
+
+Test HIGHER-AGNATE-HALF-UNCLE-EXCLUDES-FULL-UNCLES-SON (Majority) - Verified
+(Compliance: classical consensus — within the paternal uncle class, nearer degree is tested before the full line per Section 5.5.3.)
+Heirs: Half Paternal Uncle (paternal half-brother of father) + Full Paternal Uncle's Son
+Outcome: 1/1; 0
+Note: The half paternal uncle is one generation nearer and excludes the full uncle's son, although the latter descends through the full line.
+
+
+
+
+Test HIGHER-AGNATE-UNCLES-SHARE-EQUALLY (Majority) - Verified
+(Compliance: classical consensus — residuary heirs of the same class, degree and line share equally per capita per Section 5.5.3.)
+Heirs: Full Paternal Uncle 1 + Full Paternal Uncle 2
+Outcome: 1/2; 1/2
+
+
+
+
+Test HIGHER-AGNATE-UNCLES-GRANDSON-EXCLUDES-GRANDFATHERS-BROTHER (Majority) - Verified via DOC00
+(Compliance: classical consensus — each collateral level is exhausted before the next is consulted per Section 5.5.4 and Appendix C4 item 3(e).)
+Heirs: Full Paternal Uncle's Son's Son + Full Brother of Paternal Grandfather
+Outcome: 1/1; 0
+Note: The paternal uncle level is not exhausted while the uncle's son's son survives, so the grandfather's brother at the second level is excluded, although he is nearer in generational distance.
+________________
+
+
+
+
+Section 11 — Terminal Tests
+==================================================================
+
+
+
+
+Test RESIDUE-SON-ONLY (Majority) - Verified
+Heirs: Son
+Outcome: 1/1
+
+
+
+
+Test RESIDUE-SONS-PLURAL (Majority) - Verified
+Heirs: Son 1 + Son 2
+Outcome: 1/2; 1/2;
+
+
+
+
+Test RESIDUE-SON-EXCLUDES-SONS-SON (Majority) - Verified
+(Compliance: classical consensus — a surviving son excludes all more remote descendants; Section 5.1.1.)
+Heirs: Son + Son's Son
+Outcome: 1/1; 0;
+
+
+
+
+Test RESIDUE-SONS-PLURAL-WITH-DAUGHTER (Majority) - Verified
+Heirs: Son 1 + Son 2 + Daughter
+Outcome: 2/5; 2/5; 1/5;
+
+
+
+
+Test EXCLUDED-SON-DAUGHTER-FATHER (Majority) - Verified via DOC00
+(Compliance: a son excluded under Section 1.2.5 is treated as not having survived (Section 1.2.21); the daughter takes 1/2 and the father 1/6 plus the residue; Section 5.2.1.)
+Heirs: Daughter + Son (excluded under Section 1.2.5) + Father
+Outcome: 1/2; 0; 1/2;
+
+
+
+
+Test EXCLUDED-SON-GRANDSON-TAKES (Majority) - Verified via DOC00
+(Compliance: the excluded son blocks no one (Section 1.2.21); his son takes the whole as residuary heir; Sections 5.1.3 and 5.1.7.)
+Heirs: Son (excluded under Section 1.2.5) + Son's Son
+Outcome: 0; 1/1;
+
+
+
+
+Test RESIDUE-SON-WITH-DAUGHTERS (Majority) - Verified
+Heirs: Son + Daughter
+Outcome: 2/3; 1/3
+
+
+
+
+Test RESIDUE-PARENTS-ONLY (Majority) - Verified
+Heirs: Mother + Father
+Outcome: 1/3; 2/3;
+
+
+
+
+Test RESIDUE-PARENTS-SIBLINGS-PLURAL-NO-SPOUSE (Majority) - Verified
+Heirs: Mother + Father + Full Brother 1 + Full Brother 2
+Outcome: 1/6; 5/6; 0; 0
+
+
+
+
+Test RESIDUE-PARENTS-SIBLINGS-PLURAL-NO-SPOUSE-A (Majority) - Verified
+Heirs: Mother + Father + Full Brother + Paternal Brother
+Outcome: 1/6; 5/6; 0; 0
+
+
+
+
+Test RESIDUE-PARENTS-SIBLINGS-PLURAL-NO-SPOUSE-B (Majority) - Verified
+Heirs: Mother + Father + Maternal Brother + Maternal Sister
+Outcome: 1/6; 5/6; 0; 0
+
+
+
+
+Test RESIDUE-PARENTS-SIBLINGS-PLURAL-NO-SPOUSE-C (Majority) - Verified via DOC00
+Heirs: Mother + Father + Full Brother 1 (did not profess the Islamic faith at the date of death) + Full Brother 2 (did not profess the Islamic faith at the date of death)
+Outcome: 1/3; 2/3; 0; 0
+
+
+
+
+Test RESIDUE-PARENTS-SIBLINGS-PLURAL-NO-SPOUSE-D (Majority) - Verified via DOC00
+Heirs: Mother + Father + Full Brother 1 + Full Brother 2 (did not profess the Islamic faith at the date of death)
+Outcome: 1/3; 2/3; 0; 0
+
+
+
+
+Test RESIDUE-PARENTS-SIBLINGS-PLURAL-NO-SPOUSE-E (Majority) - Verified via DOC00
+Heirs: Mother + Father + Full Brother 1 (documented to the Appendix A6 standard; no claim asserted under Appendix A7) + Full Brother 2 (documented to the Appendix A6 standard; no claim asserted under Appendix A7)
+Outcome: 1/6; 5/6; 0; 0
+Note: The full brothers take nothing, being blocked by the father, but they are counted, so the mother takes 1/6 rather than 1/3.
+
+
+
+
+Test RESIDUE-PARENTS-SIBLINGS-PLURAL-NO-SPOUSE-F (Majority) - Verified
+Heirs: Mother + Father + Daughter's Son
+Outcome: 1/3; 2/3; 0
+
+
+
+
+Test EXCLUDED-FATHER-BLOCKS-NO-SIBLING (Majority) - Verified
+Heirs: Mother + Father (excluded under Section 1.2.5) + Full Brother
+Outcome: 1/3; 0; 2/3;
+
+
+
+
+Test RESIDUE-FATHER-ONLY (Majority) - Verified
+Heirs: Father
+Outcome: 1/1
+
+
+
+
+Test RESIDUE-GRANDFATHER-ONLY (Majority) - Verified
+Heirs: Paternal Grandfather
+Outcome: 1/1
+
+
+
+
+Test RESIDUE-FULL-SIBLINGS-ONLY (Majority) - Verified
+Heirs: Full Brother + Full Sister
+Outcome: 2/3; 1/3
+
+
+
+
+
+
+
+
+________________
+
+
+Tests for BLOCKING-DESCENDANTS 
+Heirs: At least one Descendant + (any sibling class)
+Note: tests marked * involve configurations where the §5.1.6(8) override is operative; the sibling is admitted as Asabah notwithstanding the surviving descendant.
+
+
+
+
+Test 1 Heirs: Son + Brothers/Sisters (Majority) - Verified
+Outcome: 1/1; 0; 
+
+
+
+
+Test 2 Heirs: Daughter + Full Brother (Majority) * - Verified
+Outcome: 1/2; 1/2;
+
+
+
+
+Test 3 Heirs: Daughter + Full Sister (Majority) * - Verified
+Outcome: 1/2; 1/2;
+
+
+
+
+Test 4 Heirs: Son + Daughter + Paternal Brother (Majority)  - Verified
+Outcome: 2/3; 1/3; 0;
+
+
+
+
+Test 5 Heirs: Son’s Son + Full Sister (Majority)  - Verified
+Outcome: 1/1; 0;
+
+
+
+
+Test 6 Heirs: Son’s Daughter + Full Brother (Majority) * - Verified
+Outcome: 1/2; 1/2;
+
+
+
+
+Test 7 Heirs: Son’s Daughter + Full Sister (Majority) * - Verified
+Outcome: 1/2; 1/2;
+
+
+
+
+Test 8 Heirs: Daughter + Maternal Brother + Maternal Sister (Majority) - Verified
+Outcome: 1/1; 0; 0;
+
+
+
+
+Test 9 Heirs: Son’s Son + Full Brother + Maternal Sister (Majority) - Verified
+Outcome: 1/1; 0; 0;
+Section 12 — Dhū al-Arḥām Placement Distribution (ahl al-tanzil)
+=======================================================================================
+(Compliance for all section 12 — the placement method (ahl al-tanzil): the Hanbali position and the later Shafii and Maliki position, adopted as the majority position under DOC00 Section 8.3.2; the Hanafi proximity method (ahl al-qarabah) is not adopted. Every expected outcome is computed under DOC00 Section 8.3.)
+
+
+
+
+Tests from the Section 8.3 worked examples
+------------------------------------------
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.4-1 - Verified via DOC00
+Heirs: Daughter's Daughter + Daughter's Daughter's Daughter 
+Outcome: 1/1; 0
+Note: DOC00 Section 8.3.4, example (1): both are on the descendants' side; the daughter's daughter is one step from an heir and the daughter's daughter's daughter two, so the nearer excludes the other.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.4-2 - Verified via DOC00
+Heirs: Son's Daughter's Daughter + Daughter's Daughter's Daughter
+Outcome: 1/1; 0
+Note: DOC00 Section 8.3.4, example (2): both are on the descendants' side; the son's daughter's daughter is one step from an heir (the son's daughter) and the daughter's daughter's daughter two, so the nearer excludes the other.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.4-3 - Verified via DOC00
+Heirs: Maternal Aunt (full sister of the mother) + Mother's Father's Mother 
+Outcome: 1/1; 0
+Note: DOC00 Section 8.3.4, example (3): both are on the mother's side; the maternal aunt is one step from the mother and the mother's father's mother two, so the maternal aunt takes the whole estate.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.4-4 - Verified via DOC00
+Heirs: Full Paternal Uncle's Daughter + Full Brother's Daughter's Daughter 
+Outcome: 1/1; 0
+Note: DOC00 Section 8.3.4, example (4): both are on the father's side; the paternal uncle's daughter is one step from an heir and the full brother's daughter's daughter two, so the nearer excludes the other.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.4-5 - Verified via DOC00
+Heirs: Maternal Aunt (full sister of the mother) + Maternal Aunt's Daughter (daughter of that maternal aunt) + Full Paternal Uncle's Son's Daughter 
+Outcome: 1/3; 0; 2/3
+Note: DOC00 Section 8.3.4, example (5): the maternal aunt excludes her own daughter on the mother's side; between sides there is no step comparison, so the estate is divided as if the mother (1/3) and the paternal uncle's son (2/3, as residuary) alone survived.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.4-6 - Verified via DOC00
+Heirs: Maternal Half-Brother's Daughter + Paternal Aunt's Son (son of a full sister of the father) 
+Outcome: 0; 1/1
+Note: DOC00 Section 8.3.4, example (6): the claimants are on different sides and are placed with the maternal half-brother and the father; the father excludes the maternal half-brother (Section 8.3.5(b)), so the paternal aunt's son takes the whole estate.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.5-1 - Verified via DOC00
+Heirs: Maternal Aunt (full sister of the mother) + Full Paternal Uncle's Son's Daughter
+Outcome: 1/3; 2/3
+Note: DOC00 Section 8.3.5, example (1): divided as if the mother (1/3) and the paternal uncle's son (2/3, as residuary) alone survived.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.5-2  - Verified via DOC00
+Heirs: Maternal Aunt (full sister of the mother) + Full Sister's Daughter + Full Sister's Daughter + Paternal Sister's Daughter + Paternal Sister's Daughter + Maternal Sister's Daughter + Maternal Sister's Daughter (each the daughter of a different sister) 
+Outcome: 1/7; 2/7; 2/7; 0; 0; 1/7; 1/7
+Note: DOC00 Section 8.3.5, example (2): divided as if the mother (1/6), two full sisters (2/3), two paternal sisters (blocked) and two maternal sisters (1/3) alone survived; awl in the ratio 1 : 4 : 2.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.5-3 - Verified via DOC00
+Heirs: Husband + Daughter's Daughter + Full Sister's Daughter
+Outcome: 1/2; 1/4; 1/4
+Note: DOC00 Section 8.3.5, example (3): the husband takes 1/2 in full; the remainder is divided as if the daughter (1/2) and the full sister (residue) alone survived.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.5-4 - Verified via DOC00
+Heirs: Wife + Daughter's Son + Daughter's Daughter (children of one predeceased daughter)
+Outcome: 1/4; 1/2; 1/4
+Note: DOC00 Section 8.3.5, example (4): the wife takes 1/4 in full; the remainder of 3/4 passes in the daughter's position, the male taking twice the female.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.6-1 - Verified via DOC00
+Heirs: Daughter's Son + Daughter's Daughter (children of one daughter)
+Outcome: 2/3; 1/3
+Note: DOC00 Section 8.3.6, example (1): the daughter's share passes to her children, the male taking twice the female.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.6-2A - Verified via DOC00
+Heirs: Daughter's Son's Daughter + Daughter's Daughter's Son (both descended from one daughter)
+Outcome: 2/3; 1/3
+Note: DOC00 Section 8.3.6, example (2): the daughter's share is divided between her son and her daughter, the male taking twice the female, and each part passes down to the claimant.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.6-2B - Verified via DOC00
+Heirs: Daughter's Son's Daughter + Daughter's Daughter's Son (descended from two different daughters)
+Outcome: 1/2; 1/2
+Note: DOC00 Section 8.3.6, example (2): two daughters are reached and take equally; each daughter's share passes down to the claimant.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.6-3 - Verified via DOC00
+Heirs: Maternal Half-Brother's Son + Maternal Half-Brother's Daughter
+Outcome: 1/2; 1/2
+Note: DOC00 Section 8.3.6, example (3): in maternal half-siblings' lines the share passes equally at every generation.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.6-4 - Verified via DOC00
+Heirs: Maternal Uncle + Maternal Aunt (full brother and full sister of the mother)
+Outcome: 2/3; 1/3
+Note: DOC00 Section 8.3.6, example (4): the mother is treated as the deceased and her share passes to her brother and sister, the male taking twice the female.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.6-5 - Verified via DOC00
+Heirs: Maternal Uncle + Maternal Aunt (maternal half-brother and maternal half-sister of the mother)
+Outcome: 1/2; 1/2
+Note: DOC00 Section 8.3.6, example (5): the mother is treated as the deceased; her maternal half-siblings take equally.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.6-6 - Verified via DOC00
+Heirs: Maternal Aunt (full sister of the mother) + Maternal Aunt (paternal half-sister of the mother) + Maternal Aunt (maternal half-sister of the mother)
+Outcome: 3/5; 1/5; 1/5
+Note: DOC00 Section 8.3.6, example (6): the mother is treated as the deceased; her sisters take 1/2, 1/6 and 1/6, returned in the ratio 3 : 1 : 1.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.6-7 - Verified via DOC00
+Heirs: Maternal Grandfather + Maternal Uncle (full brother of the mother) 
+Outcome: 1/1; 0
+Note: DOC00 Section 8.3.6, example (7): the mother is treated as the deceased; her father excludes her brother.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.7-1 - Verified via DOC00
+Heirs: Full Sister's Daughter + Maternal Half-Sister's Daughter who is also a Paternal Half-Brother's Daughter + Maternal Half-Sister's Daughter (the two Maternal Half-Sister's Daughters are daughters of one maternal half-sister)
+Outcome: 1/2; 5/12; 1/12
+Note: DOC00 Section 8.3.7, example (1): divided as if the full sister (1/2), the maternal half-sister (1/6) and the paternal half-brother (residue of 1/3) alone survived; the claimant related through two lines takes 4/12 and 1/12.
+
+
+
+
+Test DHU-AL-ARHAM-EX-8.3.7-2 - Verified via DOC00
+Heirs: Paternal Aunt (paternal half-sister of the father and also maternal half-sister of the mother) + Paternal Aunt (paternal half-sister of the father) + Maternal Aunt (full sister of the mother)
+Outcome: 5/12; 1/3; 1/4
+Note: DOC00 Section 8.3.7, example (2): the father (2/3) passes equally to his two paternal half-sisters; the mother (1/3) passes to her full sister and maternal half-sister in the ratio 3 : 1; the claimant related through two lines takes 1/3 and 1/12.
+
+
+
+
+Tests of combined configurations (reworked from the class-based tests withdrawn at DOC00 v1.1.097)
+--------------------------------------------------------------------------------------------------
+
+
+
+
+Test DHU-AL-ARHAM-COMB-01  - Verified via DOC00
+Heirs: Daughter's Son + Daughter's Daughter (children of one daughter) + Son's Daughter's Son
+Outcome: 1/2; 1/4; 1/4
+Note: Each claimant is one step from an heir on the descendants' side; divided as if the daughter (1/2) and the son's daughter (1/6) alone survived, returned in the ratio 3 : 1; the daughter's share passes to her children, the male taking twice the female (DOC00 Sections 8.3.4 to 8.3.6). Formerly DHU-AL-ARHAM-CLASS1-DEGREE-PRIORITY.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-02  - Verified via DOC00
+Heirs: Daughter's Daughter + Son's Daughter's Son + Maternal Aunt (full sister of the mother) + Maternal Aunt's Son (son of that maternal aunt)
+Outcome: 3/5; 1/5; 1/5; 0
+Note: Divided as if the daughter (1/2), the son's daughter (1/6) and the mother (1/6) alone survived, returned in the ratio 3 : 1 : 1; the maternal aunt excludes her son on the mother's side (DOC00 Sections 8.3.4 and 8.3.5). Formerly DHU-AL-ARHAM-CLASS1-DEGREE-PRIORITY-SOLE.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-03  - Verified via DOC00
+Heirs: Daughter's Son + Daughter's Daughter (children of one daughter) + Maternal Uncle (full brother of the mother) + Paternal Aunt's Son (son of a full sister of the father)
+Outcome: 1/3; 1/6; 1/6; 1/3
+Note: Divided as if the daughter (1/2), the mother (1/6) and the father (1/6 and the residue of 1/6) alone survived; the daughter's share passes to her children, the male taking twice the female (DOC00 Sections 8.3.5 and 8.3.6). Formerly DHU-AL-ARHAM-CLASS1-INTER-CLASS-EXCLUSION.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-04  - Verified via DOC00
+Heirs: Maternal Grandfather + Maternal Uncle (full brother of the mother) + Paternal Aunt's Daughter (daughter of a full sister of the father) 
+Outcome: 1/3; 0; 2/3
+Note: Divided as if the mother (1/3) and the father (2/3) alone survived; the mother is treated as the deceased and her father excludes her brother (DOC00 Sections 8.3.5 and 8.3.6). Formerly DHU-AL-ARHAM-CLASS2-ACTIVATION.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-05  - Verified via DOC00
+Heirs: Maternal Grandfather + Full Sister's Son + Maternal Aunt (full sister of the mother)
+Outcome: 2/5; 3/5; 0
+Note: Divided as if the mother (1/3) and the full sister (1/2) alone survived, returned in the ratio 2 : 3; the mother is treated as the deceased and her father excludes her sister (DOC00 Sections 8.3.5 and 8.3.6). Formerly DHU-AL-ARHAM-CLASS2-INTER-CLASS-EXCLUSION.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-06  - Verified via DOC00
+Heirs: Full Sister's Son + Maternal Uncle (full brother of the mother) + Full Paternal Uncle's Daughter 
+Outcome: 1/2; 1/3; 1/6
+Note: Divided as if the full sister (1/2), the mother (1/3) and the paternal uncle (residue of 1/6) alone survived (DOC00 Section 8.3.5). Formerly DHU-AL-ARHAM-CLASS3-ACTIVATION.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-07  - Verified via DOC00
+Heirs: Full Sister's Son + Paternal Sister's Daughter + Maternal Brother's Son
+Outcome: 3/5; 1/5; 1/5
+Note: Divided as if the full sister (1/2), the paternal sister (1/6) and the maternal brother (1/6) alone survived, returned in the ratio 3 : 1 : 1 (DOC00 Section 8.3.5). Formerly DHU-AL-ARHAM-CLASS3-EQUAL-PER-CAPITA.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-08  - Verified via DOC00
+Heirs: Full Sister's Daughter + Maternal Sister's Son + Maternal Uncle + Maternal Aunt (full brother and full sister of the mother)
+Outcome: 3/5; 1/5; 2/15; 1/15
+Note: Divided as if the full sister (1/2), the maternal sister (1/6) and the mother (1/6, reduced by the two sisters reached) alone survived, returned in the ratio 3 : 1 : 1; the mother's share passes to her brother and sister, the male taking twice the female (DOC00 Sections 8.3.5 and 8.3.6). Formerly DHU-AL-ARHAM-CLASS3-CLASS4-EXCLUSION.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-09  - Verified via DOC00
+Heirs: Maternal Uncle + Maternal Aunt (full brother and full sister of the mother) + Paternal Aunt's Son (son of a full sister of the father) 
+Outcome: 2/9; 1/9; 2/3
+Note: Divided as if the mother (1/3) and the father (2/3) alone survived; the mother's share passes to her brother and sister, the male taking twice the female (DOC00 Sections 8.3.5 and 8.3.6). Formerly DHU-AL-ARHAM-CLASS4-DEGREE-PRIORITY.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-10  - Verified via DOC00
+Heirs: Paternal Aunt's Son + Paternal Aunt's Daughter (children of one paternal aunt, a full sister of the father)
+Outcome: 2/3; 1/3
+Note: The father's whole share passes through his sister to her children, the male taking twice the female (DOC00 Section 8.3.6). Formerly DHU-AL-ARHAM-CLASS4-DEGREE4-SINGLE-SUBCATEGORY.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-11  - Verified via DOC00
+Heirs: Maternal Aunt's Son + Maternal Aunt's Daughter (children of one maternal aunt, a full sister of the mother)
+Outcome: 2/3; 1/3
+Note: The mother's whole share passes through her sister to her children, the male taking twice the female (DOC00 Section 8.3.6). Formerly DHU-AL-ARHAM-CLASS4-DEGREE4-SINGLE-SUBCATEGORY-2.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-12  - Verified via DOC00
+Heirs: Paternal Aunt's Son + Paternal Aunt's Daughter + Maternal Aunt's Son + Maternal Aunt's Daughter (one aunt on each side: a full sister of the father and a full sister of the mother)
+Outcome: 4/9; 2/9; 2/9; 1/9
+Note: Divided as if the father (2/3) and the mother (1/3) alone survived; each share passes through the aunt to her children, the male taking twice the female (DOC00 Sections 8.3.5 and 8.3.6). Formerly DHU-AL-ARHAM-CLASS4-DEGREE4-MULTI-SUBCATEGORY.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-13  - Verified via DOC00
+Heirs: Full Paternal Uncle's Daughter
+Outcome: 1/1
+Note: She is placed in the position of the paternal uncle and takes the whole estate; the estate does not pass to P-CHAR-01 (DOC00 Sections 8.3.3 and 8.3.8). Formerly DHU-AL-ARHAM-CLASS4-PATERNAL-UNCLES-DAUGHTER.
+
+
+
+
+Test DHU-AL-ARHAM-COMB-14  - Verified via DOC00
+Heirs: Paternal Aunt (full sister of the father) + Father's Maternal Half-Brother + Full Paternal Uncle's Daughter
+Outcome: 3/4; 1/4; 0
+Note: The father excludes the paternal uncle; the father is treated as the deceased and his share is divided as if his sister (1/2) and his maternal half-brother (1/6) alone survived, returned in the ratio 3 : 1 (DOC00 Sections 8.3.5 and 8.3.6). Formerly DHU-AL-ARHAM-CLASS4-FATHERS-MATERNAL-HALF-BROTHER.
+
+
+Test DHU-AL-ARHAM-COMB-15 - Verified via DOC00
+Heirs: Father's Maternal Half-Brother's Son + Father's Maternal Half-Brother's Daughter (children of one maternal half-brother of the father)
+Outcome: 2/3; 1/3
+Note: The father's maternal half-brother is not a paternal uncle (Section 5.5.3), so his son is not a residuary heir and the whole estate passes under Section 8.3. Each claimant is placed in the position of the father's maternal half-brother and then of the father (Section 8.3.3(d) and (b)); both are on the father's side with two steps (Section 8.3.4). The father is treated as the deceased and his share passes to his maternal half-brother, then to his children, the male taking twice the female (Section 8.3.6(a) and (b)). Contrast ASABAH-REMOTE-AGNATE-MALE-ONLY, where the son of a full paternal uncle takes the whole.
+________________
+
+
+
+
+Section 13 — Charitable Register Failure Modes
+==================================================================
+
+
+
+
+Test TERMINAL-CHARITABLE-FAILSAFE - Verified via DOC00
+Heirs: No heir and no dhawu al-arham claimant survives (estate to the charities in the Charitable Disposition Register under P-CHAR-01)
+Outcome: 1/1
